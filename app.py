@@ -28,7 +28,7 @@ app.title=tabtitle
 ########### Set up the layout
 
 app.layout = html.Div(children=[
-    html.H1('2014 Energy Consumption Stats by State'),
+    html.H1('2014 Energy Consumption Stats by US States'),
     html.Div([
         html.Div([
                 html.H6('Select a variable for analysis:'),
