@@ -11,7 +11,7 @@ tabtitle = 'Energy Stats by US States - 2014'
 sourceurl = 'https://www.kaggle.com/datasets/lislejoem/us_energy_census_gdp_10-14'
 githublink = 'https://github.com/xshakib/306-agriculture-exports-dropdown'
 # here's the list of possible columns to choose from.
-list_of_columns =['TotalC2014', 'BiomassC2014', 'CoalC2014', 'ElecC2014', 'FossilFuelC2014', 'GeoC2014', 'HydroC2014']
+list_of_columns =['TotalC2014', 'CoalC2014', 'ElecC2014', 'FossilFuelC2014']
 
 
 ########## Set up the chart
@@ -38,7 +38,7 @@ app.layout = html.Div(children=[
                     value='TotalC2014'
                 ),
         ], className='two columns'),
-        html.Div([dcc.Graph(id='figure-cancan'),
+        html.Div([dcc.Graph(id='figure-1'),
             ], className='ten columns'),
     ], className='twelve columns'),
     html.A('Code on Github', href=githublink),
